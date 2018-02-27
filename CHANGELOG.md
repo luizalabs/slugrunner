@@ -4,3 +4,4 @@ All notable changes from the Luizalabs team to this project will be documented i
 ## [NEXT_RELEASE]
 ### Added
 - Support to use a previously downloaded slug 
+- .travis.yml and .ci-docker.sh
