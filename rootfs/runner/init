@@ -12,7 +12,6 @@ if [[ $(ls -A $HOME) ]]; then
 	true
 elif [[ -f "$SLUG_DIR/slug.tgz" ]]; then
 	tar -xzf "$SLUG_DIR/slug.tgz" -C $HOME
-	rm "$SLUG_DIR/slug.tgz"
 	unset SLUG_URL
 elif [[ $SLUG_URL ]]; then
 	get_object
