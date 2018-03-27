@@ -11,15 +11,15 @@ mkdir -p $HOME
 if [[ $(ls -A $HOME) ]]; then
 	true
 elif [[ -f "$SLUG_DIR/slug.tgz" ]]; then
-	tar -xzf "$SLUG_DIR/slug.tgz" -C $HOME
+	tar -xzf "$SLUG_DIR/slug.tgz" -C $HOME --no-overwrite-dir
 	unset SLUG_URL
 elif [[ $SLUG_URL ]]; then
 	get_object
-	tar -xzf slug.tgz -C $HOME
+	tar -xzf slug.tgz -C $HOME --no-overwrite-dir
 	rm slug.tgz
 	unset SLUG_URL
 else
-	cat | tar -xzC $HOME
+	cat | tar -xzC $HOME --no-overwrite-dir
 fi
 
 cd $HOME
