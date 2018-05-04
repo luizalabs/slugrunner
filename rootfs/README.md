@@ -38,7 +38,7 @@ It is also possible to fully customize the command line for `sdutil` tool using 
 
 ## Base Environment
 
-The Docker image is based on Heroku's official [Cedar image](https://registry.hub.docker.com/u/heroku/cedar/).
+The Docker image is based on Heroku's official [image](https://hub.docker.com/r/heroku/heroku/).
 
 ## License
 
