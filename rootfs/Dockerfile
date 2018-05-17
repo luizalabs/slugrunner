@@ -1,5 +1,9 @@
 FROM heroku/heroku:16
 
+RUN apt-get update && \
+    apt-get install -y openjdk-8-jre-headless && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+
 RUN mkdir /app
 RUN addgroup --quiet --gid 2000 slug && \
     useradd slug --uid=2000 --gid=2000 --home-dir /app --no-create-home \
