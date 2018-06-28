@@ -27,7 +27,3 @@ RUN chmod +x /bin/objstorage && \
 USER slug
 ENV HOME /app
 ENTRYPOINT ["/runner/init"]
-
-ONBUILD RUN mkdir -p /app
-ONBUILD WORKDIR /app
-ONBUILD ADD slug.tgz /app

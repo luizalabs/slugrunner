@@ -1,6 +1,10 @@
 # Change Log
 All notable changes from the Luizalabs team to this project will be documented in this file.
 
+## [NEXT_RELEASE]
+### Changed
+- Remove unused `ONBUILD` instructions of Dockerfile
+
 ## [3.2.0] - 2018-06-06
 ### Changed
 - Use heroku:16 as base image
