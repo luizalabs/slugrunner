@@ -9,6 +9,8 @@ RUN addgroup --quiet --gid 2000 slug && \
     useradd slug --uid=2000 --gid=2000 --home-dir /app --no-create-home \
         --shell /bin/bash
 
+RUN locale-gen pt_BR.UTF-8
+
 WORKDIR /app
 
 # add default port to expose (can be overridden)

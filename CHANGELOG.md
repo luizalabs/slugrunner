@@ -1,6 +1,10 @@
 # Change Log
 All notable changes from the Luizalabs team to this project will be documented in this file.
 
+## [NEXT_RELEASE]
+### Added
+- pt_BR.UTF-8 locale support
+
 ## [3.3.0] - 2018-06-28
 ### Changed
 - Remove unused `ONBUILD` instructions of Dockerfile
